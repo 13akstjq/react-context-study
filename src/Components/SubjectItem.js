@@ -42,7 +42,7 @@ const SubjectItem = ({ subject }) => {
         setIsInit(false);
     }, []);
 
-    // 처음 한번과 isSelected 가 변경될 때마다 호출
+    // isSelected 가 변경될 때마다 호출
     useEffect(() => {
         if (!isInit) console.log("SubjectItem - 리렌더링", subject);
     }, [isSelected]);

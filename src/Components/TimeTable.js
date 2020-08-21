@@ -39,7 +39,7 @@ const TimeTable = () => {
         setIsInit(false);
     }, []);
 
-    // 처음 한번과 subjectList 가 변경될 때마다 호출
+    // subjectList 가 변경될 때마다 호출
     useEffect(() => {
         if (!isInit) console.log("TimeTable - 리렌더링");
     }, [subjectList]);
